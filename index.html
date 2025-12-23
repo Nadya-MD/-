@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureSkills - Образование будущего</title>
+    <link rel="stylesheet" href="index (1).css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo" data-page="home">
+                    <i class="fas fa-rocket"></i>
+                    <span>Future<span class="logo-highlight">Skills</span></span>
+                </a>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <nav>
+                    <ul id="mainNav">
+                        <li><a href="#" class="nav-link active" data-page="home">Главная</a></li>
+                        <li><a href="#" class="nav-link" data-page="about">О школе</a></li>
+                        <li><a href="#" class="nav-link" data-page="courses">Курсы</a></li>
+                        <li><a href="#" class="nav-link" data-page="instructors">Преподаватели</a></li>
+                        <li><a href="#" class="nav-link" data-page="contacts">Контакты</a></li>
+                        <li><a href="#" class="btn-enroll" data-page="courses">Начать обучение</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главный контейнер для контента страниц -->
+    <main id="main-content">
+        <!-- Заглушка для контента, который будет загружен -->
+        <div class="loader" id="pageLoader">
+            <div class="loader-content">
+                <div class="loader-spinner"></div>
+                <p>Загрузка...</p>
+            </div>
+        </div>
+        
+        <!-- Контент страниц будет загружен сюда -->
+        <div id="page-content"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-rocket"></i>
+                        Future<span class="logo-highlight">Skills</span>
+                    </div>
+                    <p>Мы делаем образование доступным, качественным и практико-ориентированным. Присоединяйтесь к сообществу будущих профессионалов!</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="#" data-page="home">Главная</a></li>
+                        <li><a href="#" data-page="about">О школе</a></li>
+                        <li><a href="#" data-page="courses">Курсы</a></li>
+                        <li><a href="#" data-page="instructors">Преподаватели</a></li>
+                        <li><a href="#" data-page="contacts">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Категории курсов</h3>
+                    <ul>
+                        <li><a href="#" data-filter="beginner">Для начинающих</a></li>
+                        <li><a href="#" data-filter="intermediate">Средний уровень</a></li>
+                        <li><a href="#" data-filter="advanced">Продвинутый</a></li>
+                        <li><a href="#" data-filter="premium">Премиум курсы</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Свяжитесь с нами</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Цифровая, 15</li>
+                        <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
+                        <li><i class="fas fa-envelope"></i> hello@futureskills.ru</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2024 FutureSkills. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Уведомление -->
+    <div class="notification" id="notification"></div>
+
+    <!-- JavaScript -->
+    <script src="index (1).js"></script>
+</body>
+</html>
